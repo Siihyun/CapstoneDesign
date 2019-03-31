@@ -3,7 +3,7 @@
 #include <DallasTemperature.h>
 #include <MySQL_Connection.h>
 #include <MySQL_Cursor.h>
-#include <Sqlinfo.h> // sql infofile header
+#include <Sqlinfo.h> // sql infofile header <- sql id와 password를 담고있는 header입니다.
 #define myPeriodic 15 //in sec | Thingspeak pub is 15sec
 #define ONE_WIRE_BUS 2  // DS18B20 on arduino pin2 corresponds to D4 on physical board
 
