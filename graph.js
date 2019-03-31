@@ -43,7 +43,7 @@ app.get("/graph", function(req, res) {
     now = moment(rows[rows.length-1].time).add(-1,'month');
     var e = now.format('YYYY/MM/DD,HH:mm');
     res.write('START TIME : ' + s + '<br>' +'END TIME : ' + e);
-    res.write('<br><br>NODEJS github url : test <br>');
+    res.write('<br><br>NODEJS github url : https://github.com/Siihyun/CapstoneDesign/blob/master/graph.js <br>');
     res.write('ARDUINO github url : https://github.com/Siihyun/CapstoneDesign/blob/Siihyun-4th-assignment/send_temperature_to_web.ino');
     res.end();
 
