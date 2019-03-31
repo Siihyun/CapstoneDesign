@@ -38,9 +38,9 @@ app.get("/graph", function(req, res) {
     html = html.replace("<%DATA%>",data);
     res.writeHeader(200, {"Content-Type": "text/html"});
     res.write(html);
-    now = moment(rows[0].time).add(-1,'month');
+    now = moment(rows[0].time);
     var s  = now.format('YYYY/MM/DD,HH:mm');
-    now = moment(rows[rows.length-1].time).add(-1,'month');
+    now = moment(rows[rows.length-1].time);
     var e = now.format('YYYY/MM/DD,HH:mm');
     res.write('START TIME : ' + s + '<br>' +'END TIME : ' + e);
     res.write('<br><br>NODEJS github url : https://github.com/Siihyun/CapstoneDesign/blob/master/graph.js <br>');
